@@ -7,33 +7,33 @@ namespace ClassMetotDemo
         static void Main(string[] args)
         {
 
-            Musteri musteri1 = new Musteri();
-            musteri1.Id = 1;
-            musteri1.FirstName = "kirk";
-            musteri1.LastName = "Clark";
-            musteri1.NationalIdentity = "111111";
-            musteri1.Mail = "seda@hotmail.com";
+            Customer customer1 = new Customer();
+            customer1.Id = 1;
+            customer1.FirstName = "kirk";
+            customer1.LastName = "Clark";
+            customer1.NationalIdentity = "111111";
+            customer1.Mail = "seda@hotmail.com";
 
-            Musteri musteri2 = new Musteri();
-            musteri2.Id = 2;
-            musteri2.FirstName = "Rob";
-            musteri2.LastName = "Campbell";
-            musteri2.NationalIdentity = "222222222";
-            musteri2.Mail = "Campbell@hotmail.com";
+            Customer customer2 = new Customer();
+            customer2.Id = 2;
+            customer2.FirstName = "Rob";
+            customer2.LastName = "Campbell";
+            customer2.NationalIdentity = "222222222";
+            customer2.Mail = "Campbell@hotmail.com";
 
-            Musteri[] musteriler = new Musteri[] 
+            Customer[] customers = new Customer[] 
 
             {
-                musteri1,
-                musteri2
+                customer1,
+                customer2
             
             };
 
-            MusteriManager musteriManager = new MusteriManager();
+            CustomerManager musteriManager = new CustomerManager();
 
-            musteriManager.AddCustomer(musteri1);
-            musteriManager.AddCustomer(musteri2);
-            musteriManager.List(musteriler);
+            musteriManager.AddCustomer(customer1);
+            musteriManager.AddCustomer(customer2);
+            musteriManager.List(customers);
             
               
 
