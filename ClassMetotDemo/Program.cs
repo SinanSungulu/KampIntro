@@ -12,7 +12,7 @@ namespace ClassMetotDemo
             customer1.FirstName = "kirk";
             customer1.LastName = "Clark";
             customer1.NationalIdentity = "111111";
-            customer1.Mail = "seda@hotmail.com";
+            customer1.Mail = "clrak@hotmail.com";
 
             Customer customer2 = new Customer();
             customer2.Id = 2;
